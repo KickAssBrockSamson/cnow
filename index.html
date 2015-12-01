@@ -1,0 +1,539 @@
+<!-- [ CNOW ] -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+	
+	<!-- [ CSS ] -->
+	<link rel="stylesheet" href="//cdn.cengage.com/css/apps/search/reset.css"/>
+	<link rel="stylesheet" href="//cdn.cengage.com/static/sites/cengage/header-footer/1.1/css/cengage-header.css"/>
+	<link rel="stylesheet" href="//cdn.cengage.com/static/sites/cengage/header-footer/1.1/css/cengage-footer.css"/>
+	<link rel="stylesheet" href="//cdn.cengage.com/css/cl/video-style.css"/>
+	<link rel="stylesheet" href="cnow.css"/>
+
+	<!-- [ JS ] -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//cdn.cengage.com/static/sites/cengage/header-footer/1.1/js/loader.js"></script>
+  <script src="//cdn.cengage.com/js/jwplayer/6.11/jwplayer.js"></script>
+  <script src="//cdn.cengage.com/js/contrib/jquery.jwplayer-impl.js"></script>
+  <script src="//cdn.cengage.com/js/contrib/jquery.animatescroll.js"></script>
+  <script src="//cdn.cengage.com/libs/bootstrap/3.1.1/js/carousel.js"></script>
+  <script src="//cdn.cengage.com/libs/bootstrap/3.1.1/js/transition.js"></script>
+  <script src="//cdn.cengage.com/libs/bootstrap/3.1.1/js/modal.js"></script>
+  <script src="js/cnow.js"></script>
+
+  <!-- OWL -->
+	<link href="http://owlgraphic.com/owlcarousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<script src="http://owlgraphic.com/owlcarousel/owl-carousel/owl.carousel.js"></script>
+	
+	<!--[if IE 8]><html lang="en-us" class="ie8"><![endif]-->
+	<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title>CNOW</title>
+</head>
+
+<body class="header-shadow cengage-search catalog-title marketing cnow">
+	<header id="header_include" class="scroll-drop-shadow pan-cl" role="banner">
+	  <div class="header-container">
+	    <h1 class="title" role="heading">
+	    	<a href="//www.cengage.com/"><span></span>Cengage Learning</a>
+	    </h1>
+	    <div data-target="#home" class="page-anchor catalog-title">
+	    	<h2>CengageNOWv2</h2>
+	    </div>
+	  </div>
+	</header>
+
+	<!-- [ NAV BAR ]  -->
+	<nav id="navigation-bar" class="collapse scroll-drop-shadow gale" role="complementary">
+		<button class="collapsed icon-btn header-nav-toggle mobile-panel" data-target="#header-nav-content" type="button" data-toggle="collapse">
+			<span class="sr-only">Toggle Links navigation</span>
+		</button>
+		<button class="icon-btn home-btn mobile-panel page-anchor" data-target="#home" type="button">
+			<span class="sr-only">HOME LINK</span>
+		</button>
+
+		<div class="dropdown-parent nav-bar-container" role="tablist" aria-multiselectable="true">
+
+			<!-- [ Header Nav Content ] -->
+			<section id="header-nav-content" class="collapse" role="tabpanel">
+				
+				<!-- [ DEMO Links ] -->
+				<h2>
+					<a id="demo" class="desktop-panel header-btn" href="//cnowv2demo.cengage.com">Demo</a>
+				</h2>
+
+				<!-- [ Sign In Button ] -->
+				<h2>
+					<button id="header-sign-in-btn" class="header-btn desktop-panel collapsed" data-toggle="collapse" data-target="#header-sign-in-content" data-parent="#navigation-bar" type="button">
+            Sign In<span class="sr-only">Toggle Sign In Content</span>
+          </button>
+				</h2>
+				
+				<section id="header-sign-in-content" class="collapse" role="tabpanel">
+					<div class="sign-in-wrapper">
+						
+						<form class="login-form" role="menu" action="dologin.htm?method=login" method="post">
+              <h1><b>Sign In</b> to register a product or access resources</h1>
+              <label for="email">E-mail Address or User Name</label>
+              <input type="text" name="email" maxlength="256" id="email">
+              <label for="password">Password</label>
+              <input type="password" name="password" maxlength="40" id="password" required="" autocomplete="off">
+              <input id="button" type="submit" class="button" value="Sign In">
+              <hr>
+							<a class="forgot-password" href="passwordretrieval.htm?method=showRetrievalPasswordForm">Forgot password?</a>
+            </form>
+            
+						<div class="instructor new-sign-in">
+							<h2>Faculty</h2>
+							<img src="//cdn.cengage.com/images/sites/cengage/headerfooter/faculty-bg.gif" alt="">
+							<a href="//login.cengage.com/ssoinstructor/institution.htm?method=showSchoolSearchPage&amp;nr=y" id="instructor_opt_reminder_btn" class="registerLink">New Faculty User?</a>
+						</div>
+						
+						<div class="students new-sign-in">
+							<h2>Students</h2>
+							<img src="//cdn.cengage.com/images/sites/cengage/headerfooter/students-bg.gif" alt="">
+							<a href="https://login.cengagebrain.com/cb/login.htm">New Student User?</a>
+						</div>
+
+					</div>
+				</section>
+
+				<!-- [ LINKS ] -->
+				<ul id="nav-bar-links">
+					<li>
+						<button data-target="#home" class="page-anchor">Home</button>
+					</li>
+					<li>
+						<button class="collapsed" data-toggle="collapse" data-target="#take-a-look-content">Take A Look</button>
+						<div id="take-a-look-content" class="panel-collapse collapse sub-nav-bar" role="tabpanel">
+							<ul class="container">
+								<li><button data-target="#elevate-thinking" class="page-anchor">Elevate Thinking</button></li>
+								<li><button data-target="#promote-better-outcomes" class="page-anchor">Promote Better Outcomes</button></li>
+								<li><button data-target="#easily-set-your-course" class="page-anchor">Easily Set Your Course</button></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<button data-target="#testimonials" class="page-anchor">Testimonials</button>
+					</li>
+					<li>
+						<button data-target="#outcomes" class="page-anchor">Outcomes</button>
+					</li>
+					<li>
+						<button data-target="#lms-integration" class="page-anchor">LMS Integration</button>
+					</li>
+					<li>
+						<button data-target="#instructor-support" class="page-anchor">Instructor Support</button>
+					</li>
+					<li>
+						<button data-target="#titles-available" class="page-anchor">Titles Available</button>
+					</li>
+				</ul>
+			</section>
+		</div><!-- End Container-->
+	</nav>
+
+	<!-- [ Home ] -->
+
+	<section id="home" class="panel">
+		<img class="home-phone-hero" src="images/home-phone-hero.jpg">
+		<img class="home-tablet-hero" src="images/home-tablet-hero.jpg">
+		<div class="container content-wrapper">
+			<img class="logo" src="images/CengageNowv2-Logo.svg" alt="">
+
+			<h2>Close the Gap Between Homework and Exam Performance with CengageNOWv2.</h2>
+			<button data-toggle="modal" data-target="#modal-home-video-1">PLAY VIDEO</button>
+
+			<hr>
+
+			<h2>4 Reasons College Students Love CengageNOW</h2>
+			<button data-toggle="modal" data-target="#modal-home-video-2">PLAY VIDEO</button>
+		</div>
+	</section>
+
+	<!-- [ Take A Look ] -->
+
+	<section id="take-a-look" class="panel">
+		<div class="container content-wrapper">
+			<h1 class="title">Take a Look</h1>
+			
+			<ul>
+				<li id="elevate-thinking">
+					<h2>Elevate Thinking</h2>
+					<img src="images/takealook01.jpg" alt="">
+					<div class="content">
+						<h3>CengageNOW Enhances Student Engagement</h3>
+						<p>All instructors reported that students’ engagement was improved by their use of CengageNOW, with more than a third agreeing that engagement was greatly impacted. Ninety-seven percent of students agreed that they found the coursework to be very (62%) or somewhat (35%) engaging.</p>
+					</div>
+				</li>
+				<li id="promote-better-outcomes">
+					<h2>Promote Better Outcomes</h2>
+					<img src="images/takealook02.jpg" alt="">
+					<div class="content">
+						<h3>Grades Increased Dramatically Using CengageNOW</h3>
+						<p>Students using CengageNOW achieved significantly higher final end-of-course grades in accounting than did students in classes using the same textbooks but without CengageNOW. This level of growth reflects an increase from the 50th to the 64th percentile (14 percentile points).</p>
+					</div>
+				</li>
+				<li id="easily-set-your-course">
+					<h2>Easily Set Your Course</h2>
+					<img src="images/takealook03.jpg" alt="">
+					<div class="content">
+						<h3>CengageNOW Improves Outcomes, Makes Teaching Easier</h3>
+						<p>All 15 instructors using CengageNOW felt that it contributed to the improvement of student learning outcomes, with 93 percent calling the outcomes greatly (33%) or somewhat (60%) improved. Instructors also agreed that CengageNOW made teaching easier and better (average rating of 3.6 out of 4).</p>
+					</div>
+				</li>
+				<li id="easily-set-your-course">
+					<img src="images/takealook04.jpg" alt="">
+					<div class="content">
+						<h3>CengageNOW Meets the Needs of All Types of Students</h3>
+						<p>Instructors agreed that CengageNOW is equally effective for men and women and for students of different ethnicities. In addition, instructors stated the needs of students with a wide range of capabilities were met very well through the use of CengageNOW (average rating of 3.3 on a scale of 1-4). And 81% of the 27 students reported learning more than they would have otherwise using CengageNOW.</p>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</section>
+
+	<!-- [ Testimonials ] -->
+
+	<section id="testimonials" class="panel scroll-action">
+		<div class="container content-wrapper">
+			<h1 class="title">Testimonials</h1>
+			<div id="carousel-testimonials" class="carousel slide" data-ride="carousel">
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+
+			    <div class="item active">
+			      <blockquote class="carousel-caption">
+			        <q>I love the Check Your Work option. When you’re having a hard time figuring out an answer, sometimes working backwards is the best way to understand conceptually what you’re doing wrong</q>
+							<cite><b>Brad Duncan</b>, University of Utah</cite>
+			      </blockquote>
+			    </div>
+
+			    <div class="item">
+			      <blockquote class="carousel-caption">
+			        <q>The problems are worded so that you have to think, as if you were getting the information from a supervisor or project manager. In the real world you do not get everything laid out for you in a neat package. You had to think and use reasoning skills to put together the information, just like in the workplace.</q>
+							<cite><b>Laurie Otto</b>, Northeast Wisconsin Technical College</cite>
+			      </blockquote>
+			    </div>
+
+			    <div class="item">
+			      <blockquote class="carousel-caption">
+			        <q>The problems forced you to used information from other problems to tie in concepts</q>
+							<cite><b>Jordan McCurry,</b> SMU Cox School of Business</cite>
+			      </blockquote>
+			    </div>
+
+			    <div class="item">
+			      <blockquote class="carousel-caption">
+			        <q>CengageNOW helped me to understand WHY each thing happens in accounting instead of just knowing what to do.</q>
+							<cite><b>Erin Dwyer</b>, Southeast Community College</cite>
+			      </blockquote>
+			    </div>				    
+
+			    <div class="item">
+			      <blockquote class="carousel-caption">
+			        <q>I think the beauty of CengageNOW is the interactive element of the homework. It provides instant feedback in the form of suggestions and tips rather than just telling the student that he got the question wrong. It forces the user to look at the problem from multiple angles in order to answer the problem correctly. Everything was covered adequately and thoroughly.</q>
+							<cite><b>Derek Trainor-Fogleman</b>, Bridgewater College</cite>
+			      </blockquote>
+			    </div>
+
+			  </div>
+
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+			    <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+			    <li data-target="#carousel-testimonials" data-slide-to="3"></li>
+			    <li data-target="#carousel-testimonials" data-slide-to="4"></li>
+			  </ol>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- [ Outcomes ] -->
+
+	<section id="outcomes" class="panel">
+		<div class="container content-wrapper">
+			<h1 class="title">Outcomes</h1>
+
+			<div class="story-block">
+
+				<div class="block">
+					<img src="images/outcomes01.jpg" alt="">
+					<p>Traditional homework assignments were met with moans and groans from Kristen Quinn’s accounting class. So she introduced CengageNOW, which she says “was huge to keeping the students engaged while learning on their own.”</p>
+					<a class="link" href="http://blog.cengage.com/homework-just-way-torture-students/">Read Her Blog Post</a>
+				</div>
+
+				<div class="block">
+					<img src="images/outcomes02.jpg" alt="">
+					<p>Michael O’Neill’s accounting students were skipping steps to learning in their rush to get the answer. Taking his class online with CengageNOW helped get learners focused on the process – “They can’t fudge the answer; it gives them practice opportunities for the algorithmic-type problems.” </p>
+					<a class="download" href="http://blog.cengage.com/cengagenow-helps-students-focus-problem-solving-just-arriving-answer/">Download the Success Story</a>
+				</div>
+
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- [ LMS Integration ] -->
+
+	<section id="lms-integration" class="panel scroll-action">
+		<div class="container content-wrapper">
+			<h1 class="title">LMS Integration</h1>
+			
+			<div class="blocks">
+				<img src="images/lms-blackboard_logo.jpg" alt="Blackboard">
+				<img src="images/lms-desire2learn_logo.jpg" alt="Desire to Learn">
+				<img src="images/lms-moodle_logo.jpg" alt="Moodle">
+			</div>
+
+			<div class="blocks">
+				<img src="images/lms-moodlerooms_logo.jpg" alt="Moodlerooms">
+				<img src="images/lms-lblackboardlearn_logo.jpg" alt="Angel">
+			</div>
+
+			<p>Let CengageNOWv2 link you to a simple, engaging experience for instructors and students. Cengage Learning provides Learning Management System (LMS) single sign-on integration for LMS administrators, instructors, and class participants.</p>
+			
+			<ul>
+				<li>
+					<a class="icon" href="http://sites.cengage.com/RepFinder/"></a>
+					<div class="content">
+						<p>For more information on how to integrate with these leading LMS platforms and others, please <a href="http://sites.cengage.com/RepFinder/">contact your Learning Consultant</a>.</p>
+					</div>
+				</li>
+				<li>
+					<a class="icon" href="http://solutions.cengage.com/LMSintegration/"></a>
+					<div class="content">
+						<p>Learn more about each platform at our <a href="http://solutions.cengage.com/LMSintegration/">LMS integration website</a>.</p>
+					</div>
+				</li>
+				<li>
+					<a class="icon" href=""></a>
+					<div class="content">
+						<p>Learn how you can use CengageNOWv2 within MindTap and take advantage of full LMS integration, including grade return</p>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</section>
+
+	<!-- [ Instructor Support ] -->
+
+	<section id="instructor-support" class="panel">
+		<div class="container content-wrapper">
+			<h1 class="title">Instructor Support</h1>
+			<div class="video-container" id="instructor-support-video" player="jwplayer3"></div>
+		  <script>
+				$("#instructor-support-video").player({
+				json:{
+				  mp4: "http://wowzahttp.cengage.com/cengagemarketing/es/DigitalCourseSupportMain/DigitalCourseSupportMain.mp4",
+				  webm: "http://wowzahttp.cengage.com/cengagemarketing/es/DigitalCourseSupportMain/DigitalCourseSupportMain.webm",
+				  img: "images/instructor-support-tpuprogram_still.jpg",
+				  srt: "http://wowzahttp.cengage.com/cengagemarketing/es/DigitalCourseSupportMain/DigitalCourseSupportMain.srt",
+				  txt: "http://wowzahttp.cengage.com/cengagemarketing/es/DigitalCourseSupportMain/DigitalCourseSupportMain.txt"
+				},
+				key:"yi3O3eWtkupFILhRcDNc/TZS2WnJg6o3kRjUMIQlEDQ=",
+				stream: true,
+				"default": false
+			  });
+			</script>
+			
+			<div class="video-content">
+				<h2>Digital Course Support</h2>
+				<p>A dedicated team of experts provides proactive, ongoing support that includes course set-up, usage statistics, and regular check-ins.</p>
+				<a href="http://services.cengage.com/dcs/cengagenowv2/">Access Digital Course Support</a>
+			</div>
+
+			<div class="story-block">
+
+				<div class="block">
+					<a class="icon" href="http://services.cengage.com/dcs/cengagenowv2/start/resourcelist/">Check Mark</a>
+					<h2>Training Resources</h2>
+					<p>RAccess to user guides, brief how-to videos, and additional training resources.</p>
+					<a class="call-to-action" href="http://services.cengage.com/dcs/cengagenowv2/start/resourcelist/">Access Training Material</a>
+				</div>
+
+				<div class="block">
+					<a class="icon" href="http://services.cengage.com/dcs/cengagenowv2/find/connect/">People</a>
+					<h2>Technology Power Users</h2>
+					<p>Exchange success strategies and best practices with faculty across the country using CengageNOW.</p>
+					<a class="call-to-action" href="http://services.cengage.com/dcs/cengagenowv2/find/connect/">Meet Faculty Partner</a>
+				</div>
+
+				<div class="block">
+					<a class="icon" href="http://support.cengage.com/magellanweb/TechSupport/login.aspx">Wrench</a>
+					<h2>Technical Support</h2>
+					<p>Your adoption of CengageNOW includes Technical Support for you and your students.</p>
+					<a class="call-to-action" href="http://support.cengage.com/magellanweb/TechSupport/login.aspx">Connect with Tech Support</a>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<!-- [ Titles Available ] -->
+
+	<section id="titles-available" class="panel">
+		<div class="container content-wrapper">
+			<h1 class="title">Titles Available</h1>
+			<h2>CengageNOWv2 is available for use Fall 2015 for the following titles:</h2>
+
+
+			<div id="titles-carousel" class="owl-carousel">
+
+				<div class="item">
+					<a href="http://www.cengage.com/search/productOverview.do?Ntt=9781285743615||1741877915881358424302194700439011876&amp;N=16&amp;Ntk=APG%7C%7CP_EPI&amp;Ntx=mode+matchallpartial">
+						<img src="http://www.cengage.com/covers/imageServlet?epi=1741877915881358424302194700439011876" alt="Accounting, 26e">
+						<h3>Accounting, 26e</h3>
+						<p>Warren/Reeve/Duchac</p>
+					</a>
+				</div>
+						
+				<div class="item">
+					<a href="http://www.cengage.com/search/productOverview.do?Ntt=9781285866307||1427387382213773505939583600416414651&amp;N=16&amp;Ntk=APG%7C%7CP_EPI&amp;Ntx=mode+matchallpartial">
+						<img src="http://www.cengage.com/covers/imageServlet?epi=1427387382213773505939583600416414651" alt="Financial &amp; Managerial Accounting, 13e">
+					<h3>Financial &amp; Managerial Accounting, 13e</h3>
+					<p>Warren/Reeve/Duchac</p>
+					</a>
+				</div>
+						
+				<div class="item">
+					<a href="http://www.cengage.com/search/productOverview.do?Ntt=9781305088436||107102784913590551017920790181820501142&amp;N=16&amp;Ntk=APG%7C%7CP_EPI&amp;Ntx=mode+matchallpartial">
+						<img src="http://www.cengage.com/covers/imageServlet?epi=107102784913590551017920790181820501142" alt="Financial Accounting, 14e">
+						<h3>Financial Accounting, 14e</h3>
+						<p>Warren/Reeve/Duchac</p>
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="http://www.cengage.com/search/productOverview.do?Ntt=9781285868783||762197811277864895531998961156626103&amp;N=16&amp;Ntk=APG%7C%7CP_EPI&amp;Ntx=mode+matchallpartial">
+						<img src="http://www.cengage.com/covers/imageServlet?epi=762197811277864895531998961156626103" alt="Corporate Financial Accounting, 13e">
+						<h3>Corporate Financial Accounting, 13e</h3>
+						<p>Warren/Reeve/Duchac</p>
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="http://www.cengage.com/search/productOverview.do?Ntt=9781285868806||1152203839338566351318857707997910249&amp;N=16&amp;Ntk=APG%7C%7CP_EPI&amp;Ntx=mode+matchallpartial">
+						<img src="http://www.cengage.com/covers/imageServlet?epi=1152203839338566351318857707997910249" alt="Managerial Accounting, 13e">
+						<h3>Managerial Accounting, 13e</h3>
+						<p>Warren/Reeve/Duchac</p>
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="http://www.cengage.com/search/productOverview.do?Ntt=9781285743615||1741877915881358424302194700439011876&amp;N=16&amp;Ntk=APG%7C%7CP_EPI&amp;Ntx=mode+matchallpartial">
+						<img src="http://www.cengage.com/covers/imageServlet?epi=1741877915881358424302194700439011876" alt="Intermediate Accounting, 2e">
+						<h3>Intermediate Accounting, 2e</h3>
+						<p>Wahlen/Jones/Pagach</p>
+					</a>
+				</div>
+			
+				<div class="item">
+					<a href="http://www.cengage.com/search/productOverview.do?Ntt=9781305103962||12103230288518201958847219701485612033&amp;N=16&amp;Ntk=APG%7C%7CP_EPI&amp;Ntx=mode+matchallpartial">
+						<img src="http://www.cengage.com/covers/imageServlet?epi=12103230288518201958847219701485612033" alt="Cornerstones of Managerial Accounting, 6e">
+						<h3>Cornerstones of Managerial Accounting, 6e</h3>
+						<p>Mowen/Hansen/Heitger</p>
+					</a>
+				</div>
+			
+			</div>
+
+			<script>
+			  $(document).ready(function() {
+			    $("#titles-carousel").owlCarousel({
+			      //autoPlay: 3000,
+			      items : 4, //10 items above 1000px browser width
+			      itemsDesktop : [1199,4], //3 items between 1199px and 980px
+			      itemsTablet : [770,3], //3 items between 1199px and 980px
+			      itemsMobile : [480,2], //1 items between 480px and 0px
+			      navigation : true, // Show next and prev buttons
+			      pagination : false,
+			      addClassActive : true
+			    });
+			  });
+			</script>
+
+			<div class="course-areas">
+				<h2>CengageNOW is available for the following course areas:</h2>
+				<ul>
+					<li><a href="http://www.cengage.com/search/showresults.do?N=16+4294922239+4294967194+4294965760&amp;showMoreIds=5">Accounting for Non-Majors/Survey</a></li>
+					<li><a href="http://www.cengage.com/search/showresults.do?N=16+4294922239+4294967194+4294966266&amp;showMoreIds=5">Auditing and Fraud Examination</a></li>
+					<li><a href="http://www.cengage.com/search/showresults.do?N=16+4294922239+4294967194+4294959674&amp;showMoreIds=5">College Accounting</a></li>
+					<li><a href="http://www.cengage.com/search/showresults.do?N=16+4294922239+4294967194+4294950477&amp;showMoreIds=5">Cost Accounting</a></li>
+				</ul>
+				<ul>
+					<li><a href="http://www.cengage.com/search/showresults.do?N=16+4294922239+4294967194+4294966851&amp;showMoreIds=5">Financial Accounting</a></li>
+					<li><a href="http://www.cengage.com/search/showresults.do?N=16+4294922239+4294967194+4294952194&amp;showMoreIds=5">MBA</a></li>
+					<li><a href="http://www.cengage.com/search/showresults.do?N=16+4294922239+4294967194+4294950142&amp;showMoreIds=5">Payroll Accounting</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+
+	<footer id="footer_include"></footer>
+
+	<script>
+	  loader.init({
+	    css:{ //use only if you did not load the css yourself
+	      header:false, //set true to load header CSS
+	      footer:true  //set true to load footer CSS
+	    },
+	    environment: "domain", //load resources via specific environment: "development", "staging" or "production".
+	    catalog: "pan-cl",    //load content: "pan-cl", "higher-ed", "professional", "gale", or "thorndike". 
+	    callback:function(){   
+	      loader.footer();
+	    }
+	  });
+	</script>
+
+	<!-- Home Modal 01 -->
+	<div id="modal-home-video-1" class="modal fade">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">close button</button>
+			<div class="video-container" id="home-video-1" player="jwplayer1"></div>
+			<script>
+        $("#home-video-1").player({
+          json:{
+            youtube: "https://www.youtube.com/watch?v=I_By6es_NBM"//,
+            //title: "Flashnotes and Study Tools",
+            //desc: "Peer-to-peer learning facilitated through the innovative Flashnotes.com marketplace help students boost both grades and income."
+          },
+          key:"yi3O3eWtkupFILhRcDNc/TZS2WnJg6o3kRjUMIQlEDQ=",
+          stream: true
+        });
+      </script>
+		</div>
+	</div>
+
+	<!-- Home Modal 02 -->
+	<div id="modal-home-video-2" class="modal fade">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">close button</button>
+			<div class="video-container" id="home-video-2" player="jwplayer2"></div>
+			<script>
+        $("#home-video-2").player({
+          json:{
+            youtube: "https://youtu.be/M79Q7y-4HpU",
+            img: "images/home-video-2.jpg"//,
+            //title: "Flashnotes and Study Tools",
+            //desc: "Peer-to-peer learning facilitated through the innovative Flashnotes.com marketplace help students boost both grades and income."
+          },
+          key:"yi3O3eWtkupFILhRcDNc/TZS2WnJg6o3kRjUMIQlEDQ=",
+          stream: true
+        });
+      </script>
+		</div>
+	</div>
+
+</body>
+</html>
